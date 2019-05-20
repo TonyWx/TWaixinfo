@@ -10,20 +10,6 @@ TWaixinfo only support install/managerment in System Management Interface Tool (
 This is TWaixinfo, AIX System Information Gathering and Report. It collects various information on your AIX system and outputs it in HTML format. Since it needs root permissions to install, and control by root or normal user. It is very handy as an information source during server implementation or regulary maintenance. It is now possible to collect only the desired data, take a look at the support categories.
 TWaixinfo is a shareware software which is initially provided free of charge to users, who are allowed and encouraged to make and share copies of the program.
 
-## INFORMATION CATEGORIES
-> - [x]  System Information Summary 
-> - [x]  System Devices Information 
-> - [x]  System Storage Information 
-> - [x]  FileSystem Information 
-> - [x]  System Memory Consumption 
-> - [x]  AIX Version & Maintenance Level Information 
-> - [x]  Installed Software 
-> - [x]  TCP/IP Information 
-> - [x]  System Error Log Report 
-> - [x]  Dump Devices Information 
-> - [x]  Subsystems Information 
-> - [x]  Vital Product Data (VPD) 
-
 ## INSTAllATION INSTRUCTIONS
 In this procedure, you will perform a new or upgrade installation TWaixinfo on a AIX system.
 * 1.Log in as the root user.
@@ -40,11 +26,60 @@ In this procedure, you will perform a new or upgrade installation TWaixinfo on a
 * 8.Click **Do**.
 ![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Install00.gif)
 
+## Start TWaixinfo (Only support by SMIT)
+This topic contains the information about managing **TWaixinfo**, including **`Run TWaixinfo`**, **`Categories Configuratio`**, **`Report Directory / E-Mail Setup`**, **`E-Mail Testing`** and **`Reset to Factory Default Settings`**.
+You can perform TWaixinfo management tasks from the SMIT interface :
+**# smit** > **Applications** > **System Information Report (TWaixinfo)** or Fast Path **`smit twaixinfo`**.
+![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Smit_twaixinfo.gif)
 
-##### AUTHOR
-Written by TonyW`{TWx}`
+### RUN TWaixinfo
+![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Run_TWaixinfo.gif)
 
-##### REPORTING BUGS
-Report idea/bugs to tonyw.1050@gmail.com
+### Categories Configuration
+> - [x]  System Information Summary 
+> - [x]  System Devices Information 
+> - [x]  System Storage Information 
+> - [x]  FileSystem Information 
+> - [x]  System Memory Consumption 
+> - [x]  AIX Version & Maintenance Level Information 
+> - [x]  Installed Software 
+> - [x]  TCP/IP Information 
+> - [x]  System Error Log Report 
+> - [x]  Dump Devices Information 
+> - [x]  Subsystems Information 
+> - [x]  Vital Product Data (VPD) 
+
+![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Categories.gif)
+
+### Report Directory / E-Mail Setup
+> SMTP Server IP Address        => Only support IP Address (Ex: xxx.xxx.xxx.xxx)
+
+> Report - Mail From 
+
+> Report - Mail To
+
+> Enable E-Mail Deliverability  => yes/no
+
+> Report Directory
+
+> Enable Report Save to Local   => yes/no
 
 
+![](https://github.com/TonyWx/TWaixinfo/blob/master/images/EmailSetup.gif)
+
+### E-Mail Testing
+Test your SMTP Mail Server.
+Use this option to send a test email message directly to your mail server - it will reveal any error messages raised by your SMTP server.
+
+### Reset to Factory Default Settings
+Resetting all Configuration to Defaults.
+
+### Compatibility
+- [x] **AIX 7.1**
+- [x] **AIX 7.2**
+
+#### Release History
+- [x]  v7.1.0.0 - 2019/05/20 - New Release 
+-----------------------------------------
+##### AUTHOR / REPORTING BUGS
+Written by TonyW`{TWx} # tonyw.1050@gmail.com
