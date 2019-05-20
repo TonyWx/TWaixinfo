@@ -32,7 +32,13 @@ In this procedure, you will perform a new or upgrade installation TWaixinfo on a
 >` # gunzip TWaixinfo.x.x.x.x.tar.gz`
 
 >` # tar -xvf TWaixinfo.x.x.x.x.tar`
-* 4.Run the smit install command. The Software Installation and Maintenance window opens.
+* 4.Install the package by entering this command :
+>` # cd TWaixinfo.x.x.x.x`
+* 5.Run the **smit install** command. The **Software Installation and Maintenance** window opens.
+* 6.Click **Install and Update Software** > **Install Software** > **INPUT device / directory for software**
+* 7.Enter . in the **INPUT device/directory for software** field. 
+* 8.Click **Do**.
+![](https://github.com/TonyWx/TWaixinfo/images/Install00.gif)
 
 
 ##### AUTHOR
