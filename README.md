@@ -38,7 +38,7 @@ In this procedure, you will perform a new or upgrade installation TWaixinfo on a
 * 6.Click **Install and Update Software** > **Install Software** > **INPUT device / directory for software**
 * 7.Enter . in the **INPUT device/directory for software** field. 
 * 8.Click **Do**.
-![](https://github.com/TonyWx/TWaixinfo/images/Install00.gif)
+![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Install00.gif)
 
 
 ##### AUTHOR
