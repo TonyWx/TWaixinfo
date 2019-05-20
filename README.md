@@ -31,7 +31,7 @@ In this procedure, you will perform a new or upgrade installation TWaixinfo on a
 * 3.Run the following commands to extract the *.tar.gz :
 >` # gunzip TWaixinfo.x.x.x.x.tar.gz`
 
->` # tar -xvf TWaixinfo.x.x.x.x.tar.gz`
+>` # tar -xvf TWaixinfo.x.x.x.x.tar`
 * 4.Run the smit install command. The Software Installation and Maintenance window opens.
 
 
