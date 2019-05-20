@@ -16,7 +16,7 @@ In this procedure, you will perform a new or upgrade installation TWaixinfo on a
 * 2.Download the TWaixinfo installation package to a directory of your AIX operating system, such as /tmp/install. And then locate to the directory where the .tar.gz file exists with command such as cd /tmp/install.
 * 3.Run the following commands to extract the *.tar.gz :
 >` # gunzip TWaixinfo.x.x.x.x.tar.gz`
-
+>
 >` # tar -xvf TWaixinfo.x.x.x.x.tar`
 * 4.Install the package by entering this command :
 >` # cd TWaixinfo.x.x.x.x`
@@ -24,18 +24,22 @@ In this procedure, you will perform a new or upgrade installation TWaixinfo on a
 * 6.Click **Install and Update Software** > **Install Software** > **INPUT device / directory for software**
 * 7.Enter . in the **INPUT device/directory for software** field. 
 * 8.Click **Do**.
+
 ![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Install00.gif)
 
 ## Start TWaixinfo (Only support by SMIT)
 This topic contains the information about managing **TWaixinfo**, including **`Run TWaixinfo`**, **`Categories Configuratio`**, **`Report Directory / E-Mail Setup`**, **`E-Mail Testing`** and **`Reset to Factory Default Settings`**.
 You can perform TWaixinfo management tasks from the SMIT interface :
 **# smit** > **Applications** > **System Information Report (TWaixinfo)** or Fast Path **`smit twaixinfo`**.
+
 ![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Smit_twaixinfo.gif)
 
 ### RUN TWaixinfo
 ![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Run_TWaixinfo.gif)
 
 ### Categories Configuration
+Easy to change the report options :
+
 > - [x]  System Information Summary 
 > - [x]  System Devices Information 
 > - [x]  System Storage Information 
@@ -52,18 +56,18 @@ You can perform TWaixinfo management tasks from the SMIT interface :
 ![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Categories.gif)
 
 ### Report Directory / E-Mail Setup
-> SMTP Server IP Address        => Only support IP Address (Ex: xxx.xxx.xxx.xxx)
 
+> SMTP Server IP Address        [Only support IP Address (Ex: xxx.xxx.xxx.xxx)]
+>
 > Report - Mail From 
-
+>
 > Report - Mail To
-
-> Enable E-Mail Deliverability  => yes/no
-
+>
+> Enable E-Mail Deliverability   [yes/no]
+>
 > Report Directory
-
-> Enable Report Save to Local   => yes/no
-
+>
+> Enable Report Save to Local    [yes/no]
 
 ![](https://github.com/TonyWx/TWaixinfo/blob/master/images/EmailSetup.gif)
 
@@ -82,4 +86,4 @@ Resetting all Configuration to Defaults.
 - [x]  v7.1.0.0 - 2019/05/20 - New Release 
 -----------------------------------------
 ##### AUTHOR / REPORTING BUGS
-Written by TonyW`{TWx} # tonyw.1050@gmail.com
+Written by TonyW`{TWx}` # tonyw.1050@gmail.com
