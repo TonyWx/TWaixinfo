@@ -79,8 +79,10 @@ Use this option to send a test email message directly to your mail server - it w
 Resetting all Configuration to Defaults.
 
 ### Compatibility
-- [x] **AIX 7.1**
 - [x] **AIX 7.2**
+- [x] **AIX 7.1**
+- [ ] AIX 6.1 (This version has not been tested)
+- [ ] AIX 5.3 (This version has not been tested)
 
 #### Release History
 - [x]  v7.1.0.0 - 2019/05/20 - New Release 
