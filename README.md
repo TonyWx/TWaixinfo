@@ -29,9 +29,9 @@ In this procedure, you will perform a new or upgrade installation TWaixinfo on a
 * 1.Log in as the root user.
 * 2.Download the TWaixinfo installation package to a directory of your AIX operating system, such as /tmp/install. And then locate to the directory where the .tar.gz file exists with command such as cd /tmp/install.
 * 3.Run the following commands to extract the *.tar.gz :
->` # gunzip filename.tar.gz`
+>` # gunzip TWaixinfo.x.x.x.x.tar.gz`
 
->` # tar -xvf filename.tar.gz`
+>` # tar -xvf TWaixinfo.x.x.x.x.tar.gz`
 * 4.Run the smit install command. The Software Installation and Maintenance window opens.
 
 
