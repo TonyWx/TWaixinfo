@@ -1,6 +1,9 @@
 # TWaixinfo
 AIX System Information Gathering and Report
 
+## REPORT SAMPLE
+![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Sample00.gif)
+
 ## SYNOPSIS
 TWaixinfo only support install/managerment in System Management Interface Tool (SMIT).
 
