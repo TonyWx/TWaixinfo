@@ -89,7 +89,7 @@ Resetting all Configuration to Defaults.
 
 #### Release History
 - [x]  v7.1.0.0 - 2019/05/20 - New Release
-- [x]  v7.1.0.1 - 2019/05/21 - Library Fix #Fix old machine System Information Summary null. 
+- [x]  v7.1.0.1 - 2019/05/21 - Library Fix #Fix old machine return null on System Information Summary. 
 -----------------------------------------
 ##### AUTHOR / REPORTING BUGS
 Written by TonyW`{TWx}` # tonyw.1050@gmail.com
