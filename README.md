@@ -84,12 +84,14 @@ Resetting all Configuration to Defaults.
 ### Compatibility
 - [x] **AIX 7.2**
 - [x] **AIX 7.1**
-- [ ] AIX 6.1 (This version has not been tested)
-- [ ] AIX 5.3 (This version has not been tested)
+- [x] **AIX 6.1 TL 2 Service Pack 5 (6100-02-05) or later**
+- [x] **VIOS 2.2.6**
 
 #### Release History
-- [x]  v7.1.0.0 - 2019/05/20 - New Release
+- [x]  v7.1.0.0 - 2019/05/20 - New Release.
 - [x]  v7.1.0.1 - 2019/05/21 - Library Fix #Fix old machine return null on System Information Summary. 
+- [x]  v7.1.0.2 - 2019/05/24 - Rebuild for support AIX 6.1
+
 -----------------------------------------
 ##### AUTHOR / REPORTING BUGS
 Written by TonyW`{TWx}` # tonyw.1050@gmail.com
