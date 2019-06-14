@@ -91,6 +91,7 @@ Resetting all Configuration to Defaults.
 - [x]  v7.1.0.0 - 2019/05/20 - New Release.
 - [x]  v7.1.0.1 - 2019/05/21 - Library Fix #Fix old machine return null on System Information Summary. 
 - [x]  v7.1.0.2 - 2019/05/24 - Rebuild for support AIX 6.1
+- [x]  v7.1.0.3 - 2019/06/14 - Fix column error on old Firmware Version in System Information.
 
 -----------------------------------------
 ##### AUTHOR / REPORTING BUGS
