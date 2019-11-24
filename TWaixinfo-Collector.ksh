@@ -10,7 +10,7 @@
 # Release History:
 # v7.1.0.3 - 2019/11/19 - New Release.
 #+++++++++++++++++++++++++++++++++++++
-export PATH=/usr/bin:/usr/sbin:$PATH
+export PATH=/usr/bin:/usr/sbin:/usr/ios/cli:$PATH
 if [ ! -d /tmp/TWaixinfo ]; then mkdir -m 755 /tmp/TWaixinfo; fi
 FDATE=$(date +%Y%m%d%H%M)
 RepFile="/tmp/TWaixinfo/TWaixinfo-Collector-`hostname`-"$FDATE".out"
@@ -49,7 +49,7 @@ AR=("df" "df -g" "lsfs" "lsfs -a"); Rc "${AR[@]}"
 
 TN='Memory_Consumption'; Rc "$TN"
 AR=("svmon" "svmon" )
-if [ $(id -u) == 0 ]; then AR=("svmon" "svmon" "vmo" "vmo -F -x"); fi
+if [ $(id -u) = 0 ]; then AR=("svmon" "svmon" "vmo" "vmo -F -x"); fi
 Rc "${AR[@]}"
 
 TN='AIX_Mainten_Level'; Rc "$TN"
@@ -82,6 +82,22 @@ AR=("lssrc" "lssrc -a"); Rc "${AR[@]}"
 
 TN='VPD_Information'; Rc "$TN"
 AR=("lscfg" "lscfg -vp"); Rc "${AR[@]}"
+
+# for VIOS
+if [ $(id -u) = 0 ] && [ -x "/usr/ios/cli/ioscli" ]; then
+TN='Virtual_IOS_Info'; Rc "$TN"
+AR=("iosversion" "ioscli ioslevel"); Rc "${AR[@]}"
+echo "##### $TN lsmap-all #####" >> $RepFile
+V01=`ioscli lsmap -all`; echo "$V01" >> $RepFile
+echo "##### $TN lsmap-net #####" >> $RepFile
+V02=`ioscli lsmap -all -net`; echo "$V02" >> $RepFile
+echo "##### $TN lsmap-npiv #####" >> $RepFile
+V03=`ioscli lsmap -all -npiv`; echo "$V03" >> $RepFile
+echo "##### $TN lsmap-disk #####" >> $RepFile
+V04=`ioscli lsmap -all -type disk`; echo "$V04" >> $RepFile
+echo "##### $TN lsmap-lv #####" >> $RepFile
+V05=`ioscli lsmap -all -type lv`; echo "$V05" >> $RepFile
+fi
 
 print "\n\tCompleted the Collection.\n\n\t$RepFile\n"
 exit 0
