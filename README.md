@@ -81,8 +81,8 @@ Use this option to send a test email message directly to your mail server - it w
 ### Reset to Factory Default Settings
 Resetting all Configuration to Defaults.
 
-## :+1: Ksh script for security environment collector
-(and generate html from SMIT)
+### :+1: Ksh script for security environment collector
+(Can convert from SMIT)
 
 ![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Collector01.gif)
 
