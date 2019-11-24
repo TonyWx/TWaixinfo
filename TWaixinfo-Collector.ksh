@@ -1,5 +1,5 @@
 #!/usr/bin/ksh93
-#
+################################################################
 # TWaixinfo-Collector.ksh - AIX System Information Collector
 # Written By: TonyW {TWx} - https://github.com/TonyWx/TWaixinfo
 # Version 7.1.0.3 for AIX 7.1 / 7.2 (System Report)
@@ -14,6 +14,11 @@ export PATH=/usr/bin:/usr/sbin:$PATH
 if [ ! -d /tmp/TWaixinfo ]; then mkdir -m 755 /tmp/TWaixinfo; fi
 FDATE=$(date +%Y%m%d%H%M)
 RepFile="/tmp/TWaixinfo/TWaixinfo-Collector-`hostname`-"$FDATE".out"
+DChange="#######################################################
+# Please don\'t change any content in the output file.
+# Out file can convert to html from SMIT of TWaixinfo.
+#######################################################"
+echo "$DChange" >> $RepFile
 print
 Rc(){
     if [ $# -eq 1 ]; then Title=$1; echo "##### $Title #####" >> $RepFile; return; fi
@@ -43,8 +48,8 @@ TN='Filesystems_Info'; Rc "$TN"
 AR=("df" "df -g" "lsfs" "lsfs -a"); Rc "${AR[@]}"
 
 TN='Memory_Consumption'; Rc "$TN"
-AR=("svmon" "svmon -G")
-if [ $(id -u) = 0 ]; then AR+=("vmo" "vmo -F -x"); fi
+AR=("svmon" "svmon" )
+if [ $(id -u) == 0 ]; then AR=("svmon" "svmon" "vmo" "vmo -F -x"); fi
 Rc "${AR[@]}"
 
 TN='AIX_Mainten_Level'; Rc "$TN"
@@ -80,4 +85,3 @@ AR=("lscfg" "lscfg -vp"); Rc "${AR[@]}"
 
 print "\n\tCompleted the Collection.\n\n\t$RepFile\n"
 exit 0
-
