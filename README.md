@@ -81,6 +81,11 @@ Use this option to send a test email message directly to your mail server - it w
 ### Reset to Factory Default Settings
 Resetting all Configuration to Defaults.
 
+## :+1: Ksh script for security environment collector
+(and generate html from SMIT)
+
+![](https://github.com/TonyWx/TWaixinfo/blob/master/images/Collector01.gif)
+
 ### Compatibility
 - [x] **AIX 7.2**
 - [x] **AIX 7.1**
@@ -92,6 +97,7 @@ Resetting all Configuration to Defaults.
 - [x]  v7.1.0.1 - 2019/05/21 - Library Fix #Fix old machine return null on System Information Summary. 
 - [x]  v7.1.0.2 - 2019/05/24 - Rebuild for support AIX 6.1
 - [x]  v7.1.0.3 - 2019/06/14 - Fix column error on old Firmware Version in System Information.
+- [x]  2019/11/19 - Add TWaixinfo-Collector.ksh for some security environment.
 
 -----------------------------------------
 ##### AUTHOR / REPORTING BUGS
