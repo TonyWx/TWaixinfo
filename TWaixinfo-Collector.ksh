@@ -9,6 +9,7 @@
 # AIX 7.2 / AIX 7.1 / VIOS 2.2.6 / AIX 6.1 TL 2 Service Pack 5 (6100-02-05) or later
 # Release History:
 # v7.1.0.3 - 2019/11/19 - New Release.
+#          - 2019/11/28 - Fix Rc for loop problem, change to while loop
 #+++++++++++++++++++++++++++++++++++++
 export PATH=/usr/bin:/usr/sbin:/usr/ios/cli:$PATH
 if [ ! -d /tmp/TWaixinfo ]; then mkdir -m 755 /tmp/TWaixinfo; fi
@@ -23,11 +24,14 @@ print
 Rc(){
     if [ $# -eq 1 ]; then Title=$1; echo "##### $Title #####" >> $RepFile; return; fi
     if (( $# > 1 && $# % 2 == 0  )); then
-        for i in {1..$(($#/2))}; do
+      (( ID = 1 ))
+      (( MA = $(($#/2)) ))
+      while [ $ID -le $MA ] ; do
             echo "##### $Title $1 #####" >> $RepFile
             if (( $# > 1 )); then shift; fi
             $1 >> $RepFile
             if (( $# > 0 )); then shift; fi
+            (( ID += 1 ))
         done
         print "\tGathering ... $TN .....\t done."
     fi
